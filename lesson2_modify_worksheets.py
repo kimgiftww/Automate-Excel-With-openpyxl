@@ -29,6 +29,13 @@ ws['Feb'].sheet_properties.tabColor = '84FF92FF'
 for sheet in wb:
     print(sheet.title)
 
+# Make a copy of a worksheet
+wb.copy_worksheet(ws['Jan'])
+print('-'*25)
+for sheet in wb:
+    print(sheet.title)
+
+
 wb.save('lesson2.xlsx')
 
 ImageColor.getcolor("#23a9dd", "RGBa")
