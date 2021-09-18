@@ -1,6 +1,10 @@
 import datetime as dt
 import openpyxl as xl
 
+"""
+A simple example
+"""
+
 # Construct an Excel workbook object
 wb = xl.Workbook()
 
