@@ -4,6 +4,7 @@ openpyxl is a Python library to read/write Excel xlsx/xlsm/xltx/xltm files. It w
 
 **Pros**
 - [x] Probably the most popular Excel package.
+- [x] Accepts DataTime object. 
 
 **Cons**
-- [x] Cannot interact with Excel workbook while file is open (this is possible with pywin32)
+- [x] Cannot interact with Excel workbook while file is open (this is possible with pywin32).
