@@ -35,7 +35,6 @@ print('-'*25)
 for sheet in wb:
     print(sheet.title)
 
-
 wb.save('lesson2.xlsx')
 
 ImageColor.getcolor("#23a9dd", "RGBa")
