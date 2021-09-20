@@ -7,6 +7,7 @@ Format Datetime And Insert Fomrula
 
 wb = xl.Workbook()
 wb = xl.load_workbook('lesson5.xlsx', data_only=True)
+wb = xl.load_workbook('lesson5.xlsx', read_only=True)
 wsDatetime = wb.create_sheet('Datatime')
 
 wsDatetime.cell(1, 1, dt.datetime.now())
@@ -24,7 +25,9 @@ wsFormula.cell(3, 1,
 
 # just noted that since openpyxl never evaluates
 # a formula, when you read a formula cell,
-# it will return as None
+# it will return the formula string instead of the value
+# a workaround is to open the file as data_only
+wsFormula = wb['Formula']
 wsFormula.cell(3, 1).value
 
 wb.save('lesson5.xlsx')
